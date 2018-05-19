@@ -1,0 +1,443 @@
+body {
+	margin: 0;
+	font-family: "Open Sans", Arial;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+hr {
+	clear: both;
+	border: none;
+	border-top: 1px solid #ddd;
+	background: none;
+}
+
+.row {
+	margin: 0 -15px;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.outline {
+	display: none;
+}
+[class*="col-"] {
+	float: left;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+hr {
+	margin: 0;
+}
+
+/*MENU TOP*/
+
+header {
+	background-color: #01203d;
+	overflow: hidden;
+	padding-bottom: 36px;
+}
+
+
+.menu-top-signin {
+	float: right;
+	margin-top: 36px;
+}
+
+.menu-top-signin span {
+	color: #66798a;
+}
+
+.menu-top-signin a {
+	color: #008cba;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+/*MENU HEADING*/
+
+nav {
+	clear: both;
+	line-height: 40px;
+}
+
+nav .logo {
+	float: left;
+}
+
+nav .logo img {
+	margin-top: 23px;
+}
+
+nav .menu-items ul {
+	list-style: none;
+	padding: 0;
+	clear: both;
+}
+
+nav .menu-items ul li {
+	float: left;
+	margin: 0 15px;
+}
+
+nav .menu-items ul li a {
+	color: #94a5b4;
+	text-decoration: none;
+}
+
+nav .menu-buttons {
+	float: right;
+}
+
+nav .menu-buttons span {
+	margin-right: 36px;
+	color: #fff;
+	font-weight: bold;
+}
+
+nav .menu-buttons span img {
+	margin-right: 5px;
+}
+
+nav .menu-buttons button {
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 10px 25px;
+}
+
+nav .menu-buttons .btn-demo {
+	background-color: transparent;
+	border-color: #1a3650;
+}
+
+nav .menu-buttons .btn-sign {
+	margin-left: 15px;
+	background-color: #81bc1e;
+	border: 0;
+}
+
+/*For Banner*/
+
+.banner {
+	background-image: url(../images/background.png);
+	background-size: cover;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/*Registration form*/
+
+.registration form {
+	padding: 15px;
+	max-width: 475px;
+	background-color: #034888;
+	color: #fff;
+}
+
+.registration form h1 {
+	font-size: 38px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.registration form p {
+	font-size: 12px;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.registration form input {
+	color: #8f8d8d;
+	font-size: 12px;
+	line-height: 34px;
+	margin: 7px 0;
+	padding-left: 10px;
+	border: none;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+.registration form input[type=email] {
+	width: 100%;
+	max-width: 444px;
+}
+
+.registration form input[type=password],
+.registration form input[type=tel] {
+	width: 100%;
+	max-width: 444px;
+}
+
+.registration form input[type=password] {
+	margin-right: 6px;
+}
+
+.registration form button {
+	color: #fff;
+	text-shadow: -1px -1px 0px rgb(158, 157, 157);
+	width: 218px;
+	height: 64px;
+	padding: 10px 0;
+	border: 0;
+	border-radius: 3px;
+	box-shadow: -2px -1px 0px 0px rgba(9, 64, 115, 0.18);
+	margin-top: 15px;
+	display: block;
+	margin: 14px auto;
+}
+
+.registration form button strong {
+	display: block;
+	font-size: 19px;
+}
+
+.registration form button small {
+	font-size: 10px;
+}
+
+.registration form button[type=submit] {
+	background-color: #e0741d;
+}
+
+.registration form button[type=button] {
+	background-color: #72a61a;
+}
+
+.registration form .term {
+	font-size: 9px;
+	padding-left: 22px;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+/*Customer List*/
+
+.customer-list {
+	list-style-type: none;
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+	margin-top: 24px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.customer-list > li {
+	text-align: center;
+}
+
+.customer-list > li:first-child h5 {
+	color: #686767;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.customer-list > li > img {
+	width: 120px;
+}
+
+/*Features*/
+
+.features {
+	clear: both;
+}
+
+.features .slogan {
+	text-align: center;
+	padding: 40px 0;
+	font-size: 23px;
+}
+
+.features .slogan span {
+	color: #3f3f3f;
+}
+
+.features .feature-detail {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.features .feature-detail {
+	max-width: 217px;
+	margin: 0 auto;
+}
+
+.features .feature-detail img {
+	height: 101px;
+}
+
+.features .feature-detail h3,
+.features .feature-detail p {
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.features .feature-detail h3 {
+	color: #0f5599;
+	font-size: 18px;
+}
+
+.features .feature-detail p {
+	color: #686767;
+	font-size: 14px;
+}
+
+/*TESTIMONIALs*/
+.testimonials-content {
+	padding-top: 25px;
+	
+}
+
+.testimonials-content p {
+	font-size: 19px;
+	color: #3e3e3e;
+}
+
+.testimonials-content .testimonial-author {
+	font-size: 12px;
+	font-weight: bold;
+	color: #ababab;
+}
+
+.testimonials-content strong {
+	color: #000;
+}
+
+.testimonials-img {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+/*Footer*/
+
+
+footer > p {
+	clear: both;
+	line-height: 40px;
+}
+
+.page-footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-footer strong {
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 30px;
+	padding-top: 25px;
+	display: block;
+}
+
+.page-footer p,  address {
+	margin: 0;
+	padding-bottom: 10px;
+	font-size: 10px;
+}
+.find-us {
+	display: inline-block;
+	float: left;
+}
+address {
+	display: inline-block;
+}
+.page-footer img {
+	float: left;
+	margin-top: -10px;
+}
+.page-footer ul li a,
+.page-footer ul li a:active {
+	text-decoration: none;
+	display: block;
+	color: #008cba;
+	font-size: 10px;
+}
+
+/*Responsive */
+[class*="col-"] {
+	width: 100%;
+}
+@media (min-width: 768px) {
+	.col-1-12 {width: 8.3333333%}
+	.col-2-12 {width: 16.6666667%}
+	.col-3-12 {width: 25%}
+	.col-4-12 {width: 33.3333333%}
+	.col-5-12 {width: 41.6666667%}
+	.col-6-12 {width: 50%}
+	.col-7-12 {width: 58.3333333%}
+	.col-8-12 {width: 66.6666667%}
+	.col-9-12 {width: 75%}
+	.col-10-12 {width: 83.3333337%}
+	.col-11-12 {width: 91.6666667%}
+	.col-12-12 {width: 100%}
+	
+	.registration form {
+		padding: 30px;
+	}
+
+	.registration form input[type=password],
+	.registration form input[type=tel] {
+		width: 218px;
+	}
+
+	.registration form button {
+		margin: 0;
+		margin-top: 14px;
+		display: initial;
+	}
+
+	.registration form button[type=submit] {
+		margin-right: 5px;
+	}
+}
+
+@media (min-width: 820px) {
+	.customer-list > li {
+		float: left;
+	}
+}
+@media (min-width: 1024px) {
+	.customer-list {
+		margin-left: 96px;
+	}
+	
+	.customer-list > li:first-child {
+		margin-right: 40px;
+	}
+	
+	.customer-list > li > img {
+		width: 90px;
+	}
+}
+@media (min-width: 1170px) {
+	header {
+		padding: 0;
+		height: 130px;
+	}
+	nav {
+		height: 73px;
+		line-height: 73px;
+	}
+
+	nav .menu-items ul {
+		clear: none;
+	}
+}
